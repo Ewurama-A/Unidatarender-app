@@ -16,7 +16,7 @@ df = pd.read_csv("https://github.com/Ewurama-A/Unidatarender-app/blob/main/merge
 location_graph = px.scatter(df.query("scores_teaching>50"),x= 'stats_number_students',y= 'stats_pc_intl_students',size = 'stats_number_students',color='location',hover_name='name',title = 'Percentage of International students',color_discrete_sequence=px.colors.qualitative.Set1)
 
 # Updating layouts and axes
-location_graph.update_layout(title_font_color='#4a044e',plot_bgcolor="#e4e4e7",paper_bgcolor='#e4e4e7',margin=dict(l=10, r=10, t=60, b=30),legend_title_text='Location')
+location_graph.update_layout(title_font_color='#4a044e',plot_bgcolor="#e4e4e7",paper_bgcolor='#e4e4e7',margin=dict(l=10, r=10, t=60, b=30),legend_title_text='Location',showlegend=False)
 
 location_graph.update_xaxes(title_text='Student Population',showgrid = False)
 
@@ -27,7 +27,7 @@ location_graph.update_yaxes(title_text='International Students (Percentage)')
 gender_graph = px.bar(df.query('scores_teaching>80'), x=["male_population","female_population"], y='name', title="Gender Population of Major Universities",hover_name='location',color_discrete_sequence=px.colors.qualitative.Pastel1,text ='name')
 
 # Updating axes and layout of the graph
-gender_graph.update_layout(title_font_color='#4a044e',plot_bgcolor="#e4e4e7",paper_bgcolor='#e4e4e7',margin=dict(l=10, r=10, t=40, b=30),legend_title_text='Gender')
+gender_graph.update_layout(title_font_color='#4a044e',plot_bgcolor="#e4e4e7",paper_bgcolor='#e4e4e7',margin=dict(l=10, r=10, t=40, b=30),legend_title_text='Gender',showlegend=False)
 
 gender_graph.update_traces(textfont_size=14, textangle=0, textposition="outside", cliponaxis=False)
 
