@@ -9,7 +9,7 @@ import pandas as pd
 
 
 # save dataset in variable 'df'
-df = pd.read_csv(r"C:\Users\user\Documents\Data Science programs\merged_Uniersity_data.csv")
+df = pd.read_csv(r"https://github.com/Ewurama-A/Data-Analysis/blob/3aa6fbbf5300d4e948f707c6d1edff465a16d9f4/merged_Uniersity_data.csv")
 
 df.drop('Unnamed: 0',inplace =True,axis =1)
 
