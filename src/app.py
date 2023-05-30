@@ -130,7 +130,7 @@ app.layout = html.Div([
    ],className = 'flex flex-row grid grid-cols-4 gap-2'),
     
    html.Div(children = "Ama Assiamah. Data Copyright: Kaggle. @2023", className =" w-full text-white text-md italic p-4 text-center bg-[#4c1d95]")],
-   className="flex flex-col w-full bg-[#e4e4e7] max-w-full sm:min-w-full")
+   className="flex flex-col w-full bg-[#e4e4e7] min-w-full lg:max-w-full")
 
 
 @app.callback(
