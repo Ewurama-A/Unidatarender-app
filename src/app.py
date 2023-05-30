@@ -9,7 +9,7 @@ import pandas as pd
 
 
 # save dataset in variable 'df'
-df = pd.read_csv("https://github.com/Ewurama-A/Data-Analysis/blob/3aa6fbbf5300d4e948f707c6d1edff465a16d9f4/merged_Uniersity_data.csv")
+df = pd.read_csv("https://github.com/Ewurama-A/Unidatarender-app/blob/main/merged_Uniersity_data.csv")
 
 
 # Creating graph of international students per location using plotly
