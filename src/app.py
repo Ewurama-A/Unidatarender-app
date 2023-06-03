@@ -101,16 +101,16 @@ app.layout = html.Div([
         html.Div(children=[
              html.Span(uni_num, className="text-5xl text-center my-2 font-bold md:my-2 "),
              html.Span("Universities available", className="text-lg fontmedium text-center md:m-4"),
-         ],className=" shadow-lg flex flex-col justify-center p-2 text-white itemscenter rounded-md bg-[#4c1d95] md:p-0 shadow-lg"),
+         ],className=" shadow-lg flex flex-col justify-center p-4 text-white itemscenter rounded-md bg-[#4c1d95] md:p-4 shadow-lg"),
          
            html.Div(children=[
-             html.Span(location_num, className="text-5xl text-center my-2 font-bold"),
-             html.Span("Total locations available", className="text-lg fontmedium m-4 text-center"),
+             html.Span(location_num, className="text-5xl text-center my-2 font-bold md:my-2"),
+             html.Span("Total locations available", className="text-lg fontmedium ml-4 text-center md:ml-4"),
          ],className=" shadow-lg flex flex-col justify-center p-4 text-white itemscenter rounded-md  bg-[#6d28d9] shadow-lg md:p-4"),
         
             html.Div(children=[
-              html.Span(stu_mean, className="text-5xl text-center my-2 font-bold"),
-              html.Span("Average students in a University", className="text-lg fontmedium ml-1 text-center"),
+              html.Span(stu_mean, className="text-5xl text-center my-2 font-bold md:my-2"),
+              html.Span("Average students in a University", className="text-lg fontmedium ml-1 text-center md:ml-1"),
          ],className=" shadow-lg flex flex-col justify-center p-4 text-white itemscenter rounded-md bg-[#4c1d95] shadow-lg md:p-4")],className="flex flex-col justify-center rounded-md w-auto p-4 m-4 space-y-8 bg-[#e4e4e7] md:flex-row md:justify-center md:space-x-12",id = 'home'),
      
        html.Div([
